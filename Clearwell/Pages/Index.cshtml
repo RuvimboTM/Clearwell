@@ -1,0 +1,50 @@
+@page
+@model Clearwell.Pages.IndexModel
+@{ ViewData["Title"] = "Clean water for every school"; }
+
+<section class="hero">
+    <div class="wrap hero-grid">
+        <div>
+            <h1>Every child should be able to drink at school.</h1>
+            <p class="lead">Clearwell builds boreholes and filtration systems at rural schools and clinics, then trains local people to look after them.</p>
+            <div class="actions">
+                <a class="btn" asp-page="/Donate">Fund a water point</a>
+                <a class="btn btn-ghost" asp-page="/Volunteer">Volunteer with us</a>
+            </div>
+        </div>
+        <img class="hero-image" src="Images/CleanWater.jpg" alt="Children drinking clean water at school" />
+    </div>
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C240,90 480,0 720,40 C960,80 1200,10 1440,40 L1440,80 L0,80 Z" />
+    </svg>
+</section>
+
+<section class="wrap section">
+    <h2>What we do</h2>
+    <div class="grid">
+        <article class="panel">
+            <h3>Build</h3>
+            <p>We drill boreholes and install solar-powered pumps and filters where the nearest safe water is hours away.</p>
+        </article>
+        <article class="panel">
+            <h3>Train</h3>
+            <p>Each school nominates a water committee. We teach them to test, clean and repair the system.</p>
+        </article>
+        <article class="panel">
+            <h3>Follow up</h3>
+            <p>We visit every site twice a year for five years and publish what we find.</p>
+        </article>
+    </div>
+</section>
+
+<section class="band">
+    <div class="wrap">
+        <h2>Help us reach the next school</h2>
+        <p>Our next water point is Mabvuku Primary. We still need to raise the last 35% of its cost.</p>
+        <div class="progress" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Funding progress">
+            <span style="width:65%"></span>
+        </div>
+        <p class="small">$6,500 raised of $10,000</p>
+        <a class="btn" asp-page="/Donate">Donate now</a>
+    </div>
+</section>

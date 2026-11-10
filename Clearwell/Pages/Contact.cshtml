@@ -1,0 +1,23 @@
+@page
+@model Clearwell.Pages.ContactModel
+@{ ViewData["Title"] = "Contact"; }
+
+<section class="wrap section narrow">
+    <h1>Contact us</h1>
+    <p class="lead">Questions about our work or how to get involved? Write to us.</p>
+
+    <form class="form" method="post">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn" type="submit">Send message</button>
+    </form>
+
+    <p class="small">Clearwell Foundation (fictional) &middot; hello@clearwell.example</p>
+</section>

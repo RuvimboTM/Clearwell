@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Clearwell Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="brand" asp-page="/Index">Clearwell</a>
+        <nav aria-label="Main">
+            <a asp-page="/Index">Home</a>
+            <a asp-page="/About">About</a>
+            <a asp-page="/Events">Events</a>
+            <a asp-page="/Volunteer">Volunteer</a>
+            <a asp-page="/Contact">Contact</a>
+            <a class="btn btn-small" asp-page="/Donate">Donate</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Clearwell Foundation</strong> brings clean water to rural schools and clinics.</p>
+  @*       <p class="note">Clearwell is a fictional organization created for a portfolio project. No real donations are taken.</p> *@
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
